@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_vintage"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/phoneNum"
+            style="@style/TextViewOrder"
+            android:text="@string/phone_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:hint="@string/phone_label"
+            android:background="@color/gray_light"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneNum"
+            tools:ignore="DuplicateSpeakableTextCheck,TextFields" />
+
+        <TextView
+            android:id="@+id/dateLabel"
+            style="@style/TextViewOrder"
+            android:text="@string/select_a_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhone" />
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/gray_light"
+            android:drawableEnd="@drawable/calander"
+            android:drawableTint="@color/black"
+            android:text="@string/click_on_me"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateLabel"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/cinemaLabel"
+            style="@style/TextViewOrder"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/choose_a_cinema"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhone" />
+
+        <RadioGroup
+            android:id="@+id/cinemaGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cinemaLabel">
+
+            <RadioButton
+                android:id="@+id/cinema_1"
+                style="@style/CustomRadioButton"
+                android:text="@string/cinema_1"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/cinema_2"
+                style="@style/CustomRadioButton"
+                android:text="@string/cinema_2"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/cinema_3"
+                style="@style/CustomRadioButton"
+                android:text="@string/cinema_3"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/screeningLabel"
+            style="@style/TextViewOrder"
+            android:text="@string/select_screening_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cinemaGroup" />
+
+        <RadioGroup
+            android:id="@+id/screeningGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/screeningLabel">
+
+            <RadioButton
+                android:id="@+id/screening_2d"
+                style="@style/CustomRadioButton"
+                android:text="@string/_2d"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/screening_3d"
+                style="@style/CustomRadioButton"
+                android:text="@string/_3d"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/screening_imax"
+                style="@style/CustomRadioButton"
+                android:text="@string/imax"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/adultLabel"
+            style="@style/TextViewOrder"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="188dp"
+            android:text="@string/adult_ticket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateButton" />
+
+        <Spinner
+            android:id="@+id/adultSpinner"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/gray_light"
+            android:minHeight="48dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/adultLabelPrice"
+            app:layout_constraintTop_toBottomOf="@id/adultLabel"
+            android:layoutDirection="locale" />
+
+        <TextView
+            android:id="@+id/adultLabelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="@string/adult_40_nis"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/adultSpinner"
+            app:layout_constraintBottom_toBottomOf="@id/adultSpinner" />
+
+        <TextView
+            android:id="@+id/childLabel"
+            style="@style/TextViewOrder"
+            android:text="@string/child_ticket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/adultSpinner"/>
+
+        <Spinner
+            android:id="@+id/childSpinner"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/gray_light"
+            android:minHeight="48dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/childLabelPrice"
+            app:layout_constraintTop_toBottomOf="@id/childLabel"
+            android:layoutDirection="locale" />
+
+        <TextView
+            android:id="@+id/childLabelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="@string/child_25_nis"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/childSpinner"
+            app:layout_constraintBottom_toBottomOf="@id/childSpinner" />
+
+        <TextView
+            android:id="@+id/totalLabel"
+            style="@style/TextViewOrder"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/total_payment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/childSpinner" />
+
+        <TextView
+            android:id="@+id/priceLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="@string/_000"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/totalLabel"
+            app:layout_constraintStart_toEndOf="@id/totalLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/totalLabel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/purchaseButton"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/purchase"
+            app:icon="@drawable/baseline_shopping_cart_24"
+            app:iconGravity="textEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/priceLabel"
+            app:rippleColor="@color/black"
+            tools:ignore="VisualLintButtonSize" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewOrder"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/view_tickets"
+            app:iconGravity="textEnd"
+            app:icon="@drawable/baseline_file_copy_24"
+            app:layout_constraintTop_toBottomOf="@id/purchaseButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_landscape"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/infoButton"
+            style="@style/CustomButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/infoButton"
+            app:icon="@drawable/baseline_stories" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/galleryButton"
+            style="@style/CustomButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/galleryButton"
+            app:icon="@drawable/baseline_filter_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ticketsButton"
+            style="@style/CustomButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/ticketsButton"
+            app:icon="@drawable/baseline_add_shopping_cart_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/MyticketsButton"
+            style="@style/CustomButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MyticketsButton"
+            app:icon="@drawable/baseline_file_copy_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/musicControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/musicIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+
+            android:src="@drawable/ic_music_note"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/musicSwitch"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:thumbTint="@color/black"
+            app:trackTint="@color/black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/factsIB"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="156dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/facts"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

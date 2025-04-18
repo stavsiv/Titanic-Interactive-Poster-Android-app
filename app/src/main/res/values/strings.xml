@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Titanic Movie</string>
+    <string name="infoButton">StoryLine</string>
+    <string name="galleryButton">Photo Gallery</string>
+    <string name="ticketsButton">Order Tickets</string>
+    <string name="MyticketsButton">My Tickets</string>
+    <string name="tv_description">
+    In 1912, the Titanic, the largest and most luxurious ship of its time,
+    sets sail on its maiden voyage from England to America. Onboard, Jack Dawson,
+    a free-spirited artist, meets Rose DeWitt Bukater, a young woman from a wealthy
+    family who feels trapped by society\'s expectations.
+
+    Despite coming from different worlds, they fall deeply in love. But their love story
+    takes a tragic turn when the Titanic strikes an iceberg in the middle of the Atlantic.
+
+    As the ship begins to sink, chaos erupts, and Jack and Rose must fight for survival.
+    With time running out, their love is put to the ultimate test in a heart-wrenching
+    struggle against fate.</string>
+    <string name="close">Close</string>
+    <string name="adult_ticket">Adult ticket:</string>
+    <string name="child_ticket">Child ticket:</string>
+    <string name="select_a_date">Select a date:</string>
+    <string name="choose_a_cinema">Choose a cinema:</string>
+    <string name="total_payment">Total payment:</string>
+    <string name="nis">NIS</string>
+    <string name="click_on_me">Click On Me</string>
+    <string name="_0" translatable="false">0₪</string>
+    <string name="_00" translatable="false">0₪</string>
+    <string name="_000" translatable="false">0₪</string>
+    <string name="choose">--Choose--</string>
+    <string name="get_tickets">Get Tickets</string>
+    <string name="purchase">Purchase</string>
+    <string name="order_summary">
+        \n 🎟 Adult tickets: %1$d
+        \n 🎟 Children tickets: %2$d
+        \n 📅 Date: %3$s
+        \n 🎬 Cinema: %4$s
+        \nTotal price: %5$s NIS
+    </string>
+    <string name="order_summary_title">Order Summary</string>
+    <string name="ok">OK</string>
+    <string name="no_cinema_selected">No Cinema Selected</string>
+    <string name="no_tickets_selected">No Tickets Selected</string>
+    <string name="no_date_selected">No Date Selected</string>
+    <string name="error">Error</string>
+    <string name="a_transaction_was_made">A Transaction Was Made</string>
+    <string name="ticket_success">The tickets have been successfully purchased and sent to your phone, enjoy the movie!</string>
+    <string name="invalid_phone_number">Invalid Phone Number</string>
+    <string name="empty"> </string>
+    <string name="child_25_nis" translatable="false">25 ₪</string>
+    <string name="adult_40_nis" translatable="false">40 ₪</string>
+    <string name="select_screening_type">Select Screening Type:</string>
+    <string name="cinema_1">Cinema 1</string>
+    <string name="cinema_2">Cinema 2</string>
+    <string name="cinema_3">Cinema 3</string>
+    <string name="_2d" translatable="false">2D</string>
+    <string name="_3d" translatable="false">3D</string>
+    <string name="imax" translatable="false">IMAX</string>
+    <string name="no_screening_selected">No Screening Selected</string>
+    <string name="date_in_the_past">Invalid Date</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+    <string name="confirm_order">Confirm Your Order</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="ticket_order_details">Ticket Order Details:</string>
+    <string name="back_to_home_page">Back to Home Page</string>
+    <string name="view_tickets">View Order</string>
+    <string name="no_confirmed_order">No Confirm Order</string>
+    <string name="icon_music" translatable="false">Icon Music</string>
+    <string name="fact_text" translatable="false">Fact %1$d/%2$d</string>
+    <string name="feedback_start">Just getting started—lots more to discover!</string>
+    <string name="feedback_some">Nice! You\'re starting to uncover some trivia!</string>
+    <string name="feedback_impressive">Impressive! You\'re becoming a Titanic whiz!</string>
+    <string name="feedback_expert">Captain of the Titanic, is that you?</string>
+    <string name="finish_message_new">Interesting! Seems like all facts were new to you.</string>
+    <string name="finish_message_all">Wow! You knew all the facts. A true Titanic fan!</string>
+    <string name="finish_message_some">You knew %1$d out of %2$d facts. Now you know more!</string>
+    <string name="previous">Previous</string>
+    <string name="forward">Forward</string>
+    <string name="interesting_facts">Interesting Facts</string>
+    <string name="how_many_facts_did_you_know">How many facts did you know?</string>
+    <string name="you_re_just_starting_out">You\'re just starting out!</string>
+    <string name="facts_i_knew_0_10">Facts I knew: 0/10</string>
+    <string name="fact_1">Titanic cost $7.5M to build in 1912, around $400M today.</string>
+    <string name="fact_2">The movie\'s budget was $200M, the highest at the time.</string>
+    <string name="fact_3">James Cameron visited the Titanic wreck 12 times.</string>
+    <string name="fact_4">Cameron drew Jack\'s sketches himself.</string>
+    <string name="fact_5">The Titanic was the most luxurious ship of its time, featuring advanced technology like electric-powered systems, swimming pools, and saunas.</string>
+    <string name="fact_6">Titanic won 11 Oscars.</string>
+    <string name="fact_7">The \'I\'m flying\' scene had to be done in one take and was shot in a pool with cold water.</string>
+    <string name="fact_8">Gloria Stuart (elderly Rose) was alive when Titanic sank, and was almost 87 when filming her scenes.</string>
+    <string name="fact_9">Salt water used in filming caused infections.</string>
+    <string name="fact_10">Titanic was the first film to make $1B at the box office.</string>
+    <string name="fact_11">Only about 32% of the people who boarded the Titanic survived.</string>
+    <string name="fact_12">The \'Heart of the Ocean\' necklace was fictional.</string>
+    <string name="phone_label">Phone Number:</string>
+    <string name="cinema">🎬 Cinema: %s</string>
+    <string name="screening">🎥 Screening: %s</string>
+    <string name="date">📅 Date: %s</string>
+    <string name="phone_number">📞 Phone Number: %s</string>
+    <string name="adult_tickets">🎟 Adult Tickets: %s</string>
+    <string name="child_tickets">🎟 Child Tickets: %s</string>
+    <string name="invalid_date_format">Invalid Date Format</string>
+</resources>
